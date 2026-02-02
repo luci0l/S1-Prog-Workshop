@@ -2,10 +2,11 @@
 
 ## ⭐ Ne garder que le vert
 
-![Avant](images/logo.png)
-*Avant effet
-![Après](output/green.png)
-*Après effet
+![Avant](images/logo.png "Avant effet")
+
+- Avant effet
+  ![Après](output/green.png "Après effet")
+  \*Après effet
 
 ## ⭐ Échanger les canaux
 
