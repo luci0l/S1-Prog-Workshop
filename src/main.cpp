@@ -109,7 +109,7 @@ void rotate(sil::Image& image)
 }
 
 
-void circle(sil::Image& image)
+void disc(sil::Image& image)
 {
     float rayon = 100.0f;
 
@@ -120,9 +120,9 @@ void circle(sil::Image& image)
         {
             float dx = x - image.width() / 2.0f;
             float dy = y - image.height() / 2.0f;
-            float circle = sqrt(dx*dx + dy*dy);
+            float disque = sqrt(dx*dx + dy*dy);
 
-            if (circle <= rayon)
+            if (disque <= rayon)
             {
                 image.pixel(x, y).r = 1.0f;
                 image.pixel(x, y).g = 1.0f;
@@ -188,11 +188,11 @@ int main()
         image.save("output/rotation.png");
     }
 
-    // CIRCLE
+    // DISC
     {
         sil::Image image{500/*width*/, 500/*height*/};
-        circle(image);
-        image.save("output/circle.png");
+        disc(image);
+        image.save("output/disc.png");
     }
 
     //
