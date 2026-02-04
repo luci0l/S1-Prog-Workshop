@@ -2,6 +2,8 @@
 
 ## ⭐ Ne garder que le vert
 
+rouge et bleu à zéro
+
 ![Avant](images/logo.png "Avant effet")
 ![Après](output/green.png "Après effet")
 
@@ -17,6 +19,8 @@
 
 ## ⭐ Négatif
 
+1 - la couleur
+
 ![Avant](images/logo.png "Avant effet")
 ![Après](output/negatif.png "Après effet")
 
@@ -30,15 +34,41 @@
 ![Avant](images/logo.png "Avant effet")
 ![Après](output/mirror.png "Après effet")
 
-## ⭐ Image bruitée
+## ⭐⭐ Image bruitée
+
+<!-- sans le if (true_with_probability(0.1f)) chance de 10%
+j'avais du bruit partout j'ai du comprendre comment ajouter de la probabilité (merci la lib) -->
 
 ![Avant](images/logo.png "Avant effet")
+![Après](output/noise.png "Après effet")
 
 ## ⭐ Rotation de 90°
 
 ![Avant](images/logo.png "Avant effet")
 ![Après](output/rotation.png "Après effet")
 
+## ⭐⭐ Luminosité
+
+![Avant](images/photo.jpg "Image originale")
+![Après](output/clair.png "Clair")
+![Après](output/sombre.png "Sombre")
+
 ## ⭐⭐(⭐) Disque
 
+ajouter if disque < rayon pour contenir le disque
+
 ![Après](output/disc.png "Disque")
+
+## ⭐ Cercle
+
+<!-- thickness = encadré le disque pour permettre l'épaisseur à la foir interieur et exterieur. (premier prboleme, epaisseur que interieur) -->
+
+![Après](output/circle.png "Cercle")
+
+## ⭐⭐ Animation
+
+<!--
+ajout frame (-50) pour le que cercle arrive et loop parfaite
+boucle for pour render  Accéléré sur le logiciel-->
+
+![Après](output/animatoin-circle.gif "Animation")
