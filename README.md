@@ -47,6 +47,11 @@ j'avais du bruit partout j'ai du comprendre comment ajouter de la probabilité (
 ![Avant](images/logo.png "Avant effet")
 ![Après](output/rotation.png "Après effet")
 
+## ⭐⭐ Split RGB
+
+![Avant](images/logo.png "Avant effet")
+![Après](output/split.png "Après effet")
+
 ## ⭐⭐ Luminosité
 
 ![Avant](images/photo.jpg "Image originale")
@@ -72,3 +77,26 @@ ajout frame (-50) pour le que cercle arrive et loop parfaite
 boucle for pour render  Accéléré sur le logiciel-->
 
 ![Après](output/animatoin-circle.gif "Animation")
+
+## ⭐⭐⭐ Rosace
+
+![Rosace](output/rosace.png "Rosace")
+
+## ⭐⭐ Mosaïque
+
+![Avant](images/logo.png "Avant effet")
+![Après](output/mosaique.png "Après effet")
+
+## ⭐⭐⭐ Glitch
+
+![Avant](images/logo.png "Avant effet")
+![Après](output/glitch.png "Après effet")
+
+## ⭐⭐⭐ Tri de pixels
+
+![Avant](images/logo.png "Avant effet")
+![Après](output/sort.png "Après effet")
+
+## ⭐⭐⭐(⭐) Fractale de Mandelbrot
+
+![Après](output/fractale.png "Fractale de Mandelbrot")
