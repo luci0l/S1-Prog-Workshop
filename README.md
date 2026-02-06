@@ -4,99 +4,130 @@
 
 rouge et bleu à zéro
 
-![Avant](images/logo.png "Avant effet")
-![Après](output/green.png "Après effet")
+|                  Avant                  |                  Après                   |
+| :-------------------------------------: | :--------------------------------------: |
+| ![Avant](images/logo.png "Avant effet") | ![Après](output/green.png "Après effet") |
 
 ## ⭐ Échanger les canaux
 
-![Avant](images/logo.png "Avant effet")
-![Après](output/swap.png "Après effet")
+|               Avant Effet               |               Après Effet               |
+| :-------------------------------------: | :-------------------------------------: |
+| ![Avant](images/logo.png "Avant effet") | ![Après](output/swap.png "Après effet") |
 
 ## ⭐ Noir & Blanc
 
-![Avant](images/logo.png "Avant effet")
-![Après](output/black_and_white.png "Après effet")
+|               Avant Effet               |                    Après Effet                     |
+| :-------------------------------------: | :------------------------------------------------: |
+| ![Avant](images/logo.png "Avant effet") | ![Après](output/black_and_white.png "Après effet") |
 
 ## ⭐ Négatif
 
 1 - la couleur
 
-![Avant](images/logo.png "Avant effet")
-![Après](output/negatif.png "Après effet")
+|               Avant Effet               |                Après Effet                 |
+| :-------------------------------------: | :----------------------------------------: |
+| ![Avant](images/logo.png "Avant effet") | ![Après](output/negatif.png "Après effet") |
 
 ## ⭐ Dégradé
 
-![Avant](images/logo.png "Avant effet")
-![Après](output/gradient.png "Après effet")
+|               Avant Effet               |                 Après Effet                 |
+| :-------------------------------------: | :-----------------------------------------: |
+| ![Avant](images/logo.png "Avant effet") | ![Après](output/gradient.png "Après effet") |
 
 ## ⭐ Miroir
 
-![Avant](images/logo.png "Avant effet")
-![Après](output/mirror.png "Après effet")
+|               Avant Effet               |                Après Effet                |
+| :-------------------------------------: | :---------------------------------------: |
+| ![Avant](images/logo.png "Avant effet") | ![Après](output/mirror.png "Après effet") |
 
 ## ⭐⭐ Image bruitée
 
-<!-- sans le if (true_with_probability(0.1f)) chance de 10%
-j'avais du bruit partout j'ai du comprendre comment ajouter de la probabilité (merci la lib) -->
+Sans le `if (true_with_probability(0.4f))` _(chance de 40%)_, j'avais du bruit partout j'ai du comprendre comment ajouter de la probabilité (merci la lib)
 
-![Avant](images/logo.png "Avant effet")
-![Après](output/noise.png "Après effet")
+|               Avant Effet               |               Après Effet                |
+| :-------------------------------------: | :--------------------------------------: |
+| ![Avant](images/logo.png "Avant effet") | ![Après](output/noise.png "Après effet") |
 
 ## ⭐ Rotation de 90°
 
-![Avant](images/logo.png "Avant effet")
-![Après](output/rotation.png "Après effet")
+On inverse les dimensions de l'image : la largeur devient la hauteur et vice versa.
+
+|               Avant Effet               |                 Après Effet                 |
+| :-------------------------------------: | :-----------------------------------------: |
+| ![Avant](images/logo.png "Avant effet") | ![Après](output/rotation.png "Après effet") |
 
 ## ⭐⭐ Split RGB
 
-![Avant](images/logo.png "Avant effet")
-![Après](output/split.png "Après effet")
+On décale le rouge à droite et le bleu à gauche, le vert reste à sa place.
+
+|               Avant Effet               |               Après Effet                |
+| :-------------------------------------: | :--------------------------------------: |
+| ![Avant](images/logo.png "Avant effet") | ![Après](output/split.png "Après effet") |
 
 ## ⭐⭐ Luminosité
 
-![Avant](images/photo.jpg "Image originale")
-![Après](output/clair.png "Clair")
-![Après](output/sombre.png "Sombre")
+|               Photo originale                |               Clair                |                Sombre                |
+| :------------------------------------------: | :--------------------------------: | :----------------------------------: |
+| ![Avant](images/photo.jpg "Image originale") | ![Après](output/clair.png "Clair") | ![Après](output/sombre.png "Sombre") |
 
 ## ⭐⭐(⭐) Disque
 
-ajouter if disque < rayon pour contenir le disque
+On regarde la distance des pixels par rapport au centre. Si la distance fait partie du rayon, on colore les pixels en blanc.
 
-![Après](output/disc.png "Disque")
+|               Disque               |
+| :--------------------------------: |
+| ![Après](output/disc.png "Disque") |
 
 ## ⭐ Cercle
 
-<!-- thickness = encadré le disque pour permettre l'épaisseur à la foir interieur et exterieur. (premier prboleme, epaisseur que interieur) -->
+Très similaire au disque sauf qu'on garde que le contour, c'est à dire on garde les pixels dont la distance est proche du rayon.
 
-![Après](output/circle.png "Cercle")
+|                Cercle                |
+| :----------------------------------: |
+| ![Après](output/circle.png "Cercle") |
 
 ## ⭐⭐ Animation
 
-<!--
-ajout frame (-50) pour le que cercle arrive et loop parfaite
-boucle for pour render  Accéléré sur le logiciel-->
+Le disque se déplace vers la gauche à chaque frame de 4 pixels. J'ai décalé la position de départ du disque à -50 pixels pour créer une boucle. _(J'ai acceléré l'animation sur [Ezgif](https://ezgif.com/maker))_
 
-![Après](output/animatoin-circle.gif "Animation")
+|                 Animation disque                  |
+| :-----------------------------------------------: |
+| ![Après](output/animatoin-circle.gif "Animation") |
 
 ## ⭐⭐⭐ Rosace
 
-![Rosace](output/rosace.png "Rosace")
+J'ajoute à mon algorithme du cercle une boucle qui permet de placer les cercles sur un plus grand cercle (2 PI). Chaque cercle est placé en fonction d'un angle différent mais toujours à la même distance du centre. J'ai redessiné le cercle central ensuite.
+
+|                Rosace                 |
+| :-----------------------------------: |
+| ![Rosace](output/rosace.png "Rosace") |
 
 ## ⭐⭐ Mosaïque
 
-![Avant](images/logo.png "Avant effet")
-![Après](output/mosaique.png "Après effet")
+|               Avant Effet               |                 Après Effet                 |
+| :-------------------------------------: | :-----------------------------------------: |
+| ![Avant](images/logo.png "Avant effet") | ![Après](output/mosaique.png "Après effet") |
 
 ## ⭐⭐⭐ Glitch
 
-![Avant](images/logo.png "Avant effet")
-![Après](output/glitch.png "Après effet")
+On prend des petits rectangles aléatoires de l'image puis on swap leur position avec d'autres.
+
+|               Avant Effet               |                Après Effet                |
+| :-------------------------------------: | :---------------------------------------: |
+| ![Avant](images/logo.png "Avant effet") | ![Après](output/glitch.png "Après effet") |
 
 ## ⭐⭐⭐ Tri de pixels
 
-![Avant](images/logo.png "Avant effet")
-![Après](output/sort.png "Après effet")
+On choisit une ligne avec sa position et sa taille au hasard. On met la ligne dans un tableau puis on tris les lignes en fonction de leur birghtness.
+
+|               Avant Effet               |               Après Effet               |
+| :-------------------------------------: | :-------------------------------------: |
+| ![Avant](images/logo.png "Avant effet") | ![Après](output/sort.png "Après effet") |
 
 ## ⭐⭐⭐(⭐) Fractale de Mandelbrot
 
-![Après](output/fractale.png "Fractale de Mandelbrot")
+Pour la fractale, il faut convertir les coordonées (x,y) en complexes (parties Imaginaire et Réelle). Pour tracer la fractale, il suffit d'appliquer la formule. Ensuite, je n'avais pas utiliser `static_cast<float>` qui me donnait une image sans nuance de gris, puisque je ne faisais pas la conversion de int vers float.
+
+|                       Mandelbrot                       |
+| :----------------------------------------------------: |
+| ![Après](output/fractale.png "Fractale de Mandelbrot") |

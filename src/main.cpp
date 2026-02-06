@@ -274,7 +274,7 @@ void rosace(sil::Image& image)
 
     for (int i{0}; i<circles; i++)
     {
-        float angle = i * 2.0f * M_PI / circles; //repartition des cercles sur 360 degrés (un cercle complet)
+        float angle = i * 2.0f * M_PI / circles; //repartition des cercles sur 2 PI (un cercle complet)
         float centre_cercleX= image.width()/2.0f + rayon * cos(angle);
         float centre_cercleY=image.height()/2.0f + rayon * sin(angle);
 
